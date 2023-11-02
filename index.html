@@ -41,12 +41,42 @@
                         11 AM Eastern | 8 AM Pacific <br />
                         Duration: 90 Minutes <br />
                     </h5>
-                    <h5 class="price">$997 VALUE
-                        <span class="fr">FREE!</span>
-                    </h5>
-                    <div>
-                        <button class="btn">SECURE YOUR SEAT</button>
+                    <div class="free-co">
+                        <h5 class="price">$997 VALUE</h5>
+                        <h5 class="fr">FREE!</h5>
                     </div>
+
+                    <div>
+                        <button class="btn" onclick="openForm()">SECURE YOUR SEAT</button>
+                    </div>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeForm()">&times;</span>
+                            <h2>Register for the free webinar</h2>
+                            <form id="registrationForm">
+                                <div class="form-container">
+                                    <label for="firstName">First Name<span style="color: red;">*</span></label>
+                                    <br>
+                                    <input type="text" id="firstName" placeholder="Enter your first name" required>
+                                    <br>
+                                    <label for="lastName">Last Name<span style="color: red;">*</span></label>
+                                    <br>
+                                    <input type="text" id="lastName" placeholder="Enter your last name" required>
+                                    <br>
+                                    <label for="email">Business Email<span style="color: red;">*</span></label>
+                                    <br>
+                                    <input type="email" id="email" placeholder="Enter your email" required>
+                                    <br>
+                                    <label for="phoneNumber">Phone Number<span style="color: red;">*</span></label>
+                                    <br>
+                                    <input type="tel" id="phoneNumber" placeholder="Enter your phone number" required>
+                                    <br>
+                                    <button type="submit" class="btn">Secure Your Seat</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="logo-container">
@@ -115,7 +145,24 @@
                 Duration: 90 Minutes
             </h6>
             <div>
-                <button class="btn">SECURE YOUR SEAT</button>
+                <button class="btn" onclick="openForm()">SECURE YOUR SEAT</button>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeForm()">&times;</span>
+                    <h2 class="rg">Register for the free webinar</h2>
+                    <form id="registrationForm">
+                        <input type="text" id="firstName" placeholder="First Name" required>
+                        <br>
+                        <input type="text" id="lastName" placeholder="Last Name" required>
+                        <br>
+                        <input type="email" id="email" placeholder="Business Email" required>
+                        <br>
+                        <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+                        <br>
+                        <button type="submit" class="btn">Secure Your Seat</button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="ceo-container">
@@ -162,8 +209,18 @@
                     Duration: 90 Minutes
                 </h6>
                 <div>
-                    <button class="btn">SECURE YOUR SEAT</button>
+                    <button class="btn" onclick="openForm()">SECURE YOUR SEAT</button>
                 </div>
+
+            </div>
+        </div>
+        <div class="footer-container">
+            <div>
+                <img src="https://resources.commlabindia.com/hubfs/commlab_logo/cl-logo-final-white.png" class="logo-image" alt="logo" />
+            </div>
+            <div class="copy-container">
+                <p3 class="copy">Copyright © 2023, CommLab India</p3>
+                <p3 class="copy">Privacy Policy | Site Map</p3>
             </div>
         </div>
 </body>

@@ -2,7 +2,7 @@
 
 .bg-image {
   background-image: url("https://img.freepik.com/free-photo/rear-view-excited-people-with-arms-raised-having-fun-while-watching-confetti-fireworks-front-stage-music-festival-copy-space_637285-568.jpg?size=626&ext=jpg&ga=GA1.1.2002628386.1688888353&semt=ais");
-  opacity: 0.9;
+
   width: 100%;
 
   background-size: cover;
@@ -76,6 +76,20 @@
     border-radius: 20px;
     padding: 10px;
 } */
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: darkred;
+}
+
 .image-container {
   display: flex;
   justify-content: center;
@@ -134,6 +148,11 @@
   padding: 5px;
 }
 
+.free-co {
+  display: flex;
+  flex-direction: row;
+}
+
 .price {
   margin-top: 20px;
   position: relative;
@@ -141,10 +160,13 @@
 }
 
 .fr {
+  margin-top: 13px;
   top: 0;
   right: 0;
   color: orange;
+
   padding: 5px;
+  text-decoration: none;
 }
 
 .btn {
@@ -195,7 +217,7 @@
   text-align: center;
   color: #121029;
   background-color: lightgray;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .overlay {
@@ -290,4 +312,97 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  background-color: white;
+  color: black;
+}
+
+.rg {
+  text-align: center;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-container input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+/* .footer-container {
+    background-color: black;
+    margin-top: 0px;
+}
+.logo-image {
+    margin: 70px;
+}
+.copy-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+} */
+.footer-container {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.copy-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-image {
+  max-width: 100px;
+  height: auto;
+}
+
+.copy-container p3 {
+  margin: 5px 0;
+}
+
+.copy-container p3:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
