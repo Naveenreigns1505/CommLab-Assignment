@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.bg-image {
+  background-image: url("https://img.freepik.com/free-photo/rear-view-excited-people-with-arms-raised-having-fun-while-watching-confetti-fireworks-front-stage-music-festival-copy-space_637285-568.jpg?size=626&ext=jpg&ga=GA1.1.2002628386.1688888353&semt=ais");
+  opacity: 0.9;
+  width: 100%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-heading {
+  color: white;
+}
+
+/* .lady-image {
+    height: 400px;
+    width: 200px;
+    background-color: transparent;
+} */
+/* .image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-70%, -50%);
+}
+
+.image-container img {
+    background: transparent;
+
+    max-width: 100%;
+    height: auto;
+}
+
+.detailed-background {
+    border: 1px solid lightgray;
+    height: 600px;
+    width: 450px;
+    background-color: lightgray;
+    position: absolute;
+    top: 50%;
+
+    transform: translate(80%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.ai-head {
+    color: #db1215;
+
+}
+
+.raj {
+    background-color: black;
+    color: white;
+    border: 1px solid;
+    padding: 5px;
+}
+
+.price {
+    text-decoration: line-through;
+}
+
+.fr {
+    text-decoration: none;
+    color: orange;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+} */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bga {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.detailed-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid lightgray;
+  background-color: lightgray;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .image-container {
+    flex-direction: row;
+  }
+
+  .detailed-background {
+    max-width: 50%;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .detailed-background {
+    max-width: 43%;
+  }
+}
+
+.ai-head {
+  margin-top: 10px;
+  color: #db1215;
+  font-size: 38px;
+}
+
+.raj {
+  margin: 10px 0;
+  background-color: black;
+  color: white;
+  border: 1px solid;
+  padding: 5px;
+}
+
+.price {
+  margin-top: 20px;
+  position: relative;
+  text-decoration: line-through;
+}
+
+.fr {
+  top: 0;
+  right: 0;
+  color: orange;
+  padding: 5px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: darkred;
+}
+
+.logo-container {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.bran {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* .content-container {
+    background-image: url('https://img.freepik.com/free-photo/robot-protecting-world_1048-3585.jpg?size=626&ext=jpg&ga=GA1.1.2002628386.1688888353&semt=ais');
+    opacity: 0.9;
+    width: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: gray;
+} */
+.content-container {
+  background-image: url("https://img.freepik.com/free-photo/robot-protecting-world_1048-3585.jpg?size=626&ext=jpg&ga=GA1.1.2002628386.1688888353&semt=ais");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  color: #121029;
+  background-color: lightgray;
+  opacity: 0.7;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* Adjust the alpha value to change the transparency */
+}
+
+.content-container h1 {
+  margin-bottom: 10px;
+}
+
+.content-container h4 {
+  margin: 10px 0;
+}
+
+.content-container h6 {
+  margin: 20px 0;
+}
+
+.content-container p {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.content-container button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: darkred;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.content-container svg {
+  margin-right: 10px;
+}
+
+.ceo-container {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.complete-information-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.c-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.complete-information-container img {
+  max-width: 100%;
+  height: auto;
+
+  margin-bottom: 20px;
+}
+
+.in-head {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.in-head2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.para {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.sec {
+  background-image: url("https://img.freepik.com/free-photo/rear-view-excited-people-with-arms-raised-having-fun-while-watching-confetti-fireworks-front-stage-music-festival-copy-space_637285-568.jpg?size=626&ext=jpg&ga=GA1.1.2002628386.1688888353&semt=ais");
+  opacity: 0.9;
+  width: 100%;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
